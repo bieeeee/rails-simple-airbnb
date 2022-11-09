@@ -1,0 +1,19 @@
+<h1>All Our Flats</h1>
+<p>Currently <%= @flats.count %> flats are available</p>
+
+<div class="cards">
+  <% @flats.each do |flat| %>
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= flat.name %></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="flat-info">
+          <i class="fa-solid fa-user-group"> <%= flat.number_of_guests %></i>
+          <i class="fa-solid fa-dollar-sign"> <%= flat.price_per_night %></i>
+        </div>
+      </div>
+        <a href="#" class="btn btn-primary">More info</a>
+    </div>
+  <% end %>
+</div>
