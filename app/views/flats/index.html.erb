@@ -1,5 +1,7 @@
-<h1>All Our Flats</h1>
-<p>Currently <%= @flats.count %> flats are available</p>
+<div class="header">
+  <h1>All Our Flats</h1>
+  <h4>(<%= @flats.count %>)</h4>
+</div>
 
 <div class="cards">
   <% @flats.each do |flat| %>
@@ -13,7 +15,7 @@
           <i class="fa-solid fa-dollar-sign"> <%= flat.price_per_night %></i>
         </div>
       </div>
-        <a href="#" class="btn btn-primary">More info</a>
+        <div class="more-info"><%= link_to "More info", flat_path(flat) %></div>
     </div>
   <% end %>
 </div>

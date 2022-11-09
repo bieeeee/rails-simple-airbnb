@@ -1,4 +1,18 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
 
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
 
 .cards {
   display: grid;
@@ -6,6 +20,13 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.flat-info {
-  gap: 10px;
+.card {
+  box-shadow: 3px 4px darkgray;
+}
+
+.more-info {
+  margin: 8px 4px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
